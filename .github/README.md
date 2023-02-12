@@ -32,7 +32,7 @@ There are two ways to get started. The first is by running `make` in the root di
 ```
 cd ansible
 chmod +x run.yml
-./run0.yml
+./run.yml
 ```
 
 
