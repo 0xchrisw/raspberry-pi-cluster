@@ -25,6 +25,8 @@
 
 This project contains a series of Ansible Playbooks, as well as BASH, Python, and other relevant tools to kick off the deployment of a Raspberry Pi cluster.
 
+You're management IP will be assigned by a local wifi enabled router. In order to access the cluster and worker nodes you will be using the "controller" as a bastion host. Cluster hosts will be assigned an IP in the 10.0.0.0/24 network.
+
 
 ## Controller Installation
 ### Step 1
