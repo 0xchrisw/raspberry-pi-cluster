@@ -26,13 +26,20 @@
 This project contains a series of Ansible Playbooks, as well as BASH, Python, and other relevant tools to kick off the deployment of a Raspberry Pi cluster.
 
 
-## Installation
+## Controller Installation
+### Step 1
+Install Ubuntu on your Raspberry Pi, setting the username and password to `ubuntu`.
 
-There are two ways to get started. The first is by running `make` in the root directory of this project, or you can:
+### Step 2
+Connect you're Pi to a local Wifi network. We will be using this as a management interface.
+
+### Step 3
+Once online, head over the the [`inventory.yml`](https://github.com/christopherwoodall/raspberry-pi-cluster/blob/main/ansible/inventory/inventory.yml) file and put in the correct IP address for your Pi. This will be given out by your local network DHCP provider.
+
+### Step 4
+In the root of the repository run the following command:
 ```
-cd ansible
-chmod +x run.yml
-./run.yml
+$ make run
 ```
 
 
