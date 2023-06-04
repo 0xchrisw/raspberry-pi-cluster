@@ -8,6 +8,10 @@
 ##   This will handle all files NOT defined below.
 * text=auto
 
+## Devops
+.github/ export-ignore
+.gitlab/ export-ignore
+
 ## DOCUMENTATION
 *.markdown   text
 *.md         text
@@ -43,3 +47,11 @@ TODO         text
 .gitconfig     text
 Makefile       text
 makefile       text
+
+
+## REPO SETTINGS - GitHub Specific
+##   see: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
+*.yaml linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
